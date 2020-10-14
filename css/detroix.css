@@ -1,0 +1,240 @@
+:root {
+    --darkBlue: #111d29;
+    --buttonBlue: #213349;
+    --whiteish: #f1f2f4;
+    --orange: #ff8700;
+    --lightGray: #696969;
+    --fontHeading: 'Oswald', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--whiteish);
+}
+
+a {
+    text-decoration: none;
+}
+
+nav li {
+    display: inline;
+    list-style-type: none;
+}
+
+nav ul {
+    margin: 0;
+}
+
+.col {
+    width: calc(99%/3);
+    display: inline-block;
+}
+
+.container {
+    margin: 0 auto;
+    width: 940px;
+}
+
+.hidden {
+    display: none;
+}
+
+.clear-fix {
+    clear: both;
+}
+
+/* end of global rules - beginning of header */
+
+.topBar {
+    background-color: var(--darkBlue);
+    padding: 3px;
+}
+
+.topBar a {
+    color: var(--lightGray);
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.topBar a:hover {
+    color: var(--whiteish);
+}
+
+.corporateNav {
+    float: right;
+}
+
+.corporateNav li {
+    border-right: 1px solid var(--lightGray);
+    padding: 0 6px;
+}
+
+.corporateNav li:last-child {
+    border-right: none;
+}
+
+.branding {
+    padding: 10px 0;
+}
+
+.logo {
+    display: inline;
+}
+
+.mainNav {
+    float: right;
+}
+
+.button {
+    font-family: var(--fontHeading);
+    padding: 10px 25px;
+    color: var(--whiteish);
+    background-color: var(--darkBlue);
+    border-radius: 10px;
+    text-transform: uppercase;
+    line-height: 65px;
+    font-size: medium;
+}
+
+.button:hover {
+    background-color: var(--orange);
+}
+
+/* end of header/button - beginning of content */
+
+.content .container {
+    border-top: 1px solid lightgray;
+}
+
+
+.content .col {
+    border-right: 1px solid lightgrey;
+    padding-bottom: 90px;
+    padding-left: 10px;
+}
+
+.content .col:last-child {
+    border-right: none;
+}
+
+.content h2 {
+    font-size: 45px;
+    font-family: var(--fontHeading);
+    text-transform: uppercase;
+}
+
+.content img {
+    text-align: justify;
+    padding: 0 0 40px 2px;
+}
+
+.col p {
+    color: var(--lightGray);
+    font-size: 14px;
+    font-weight: 200;
+    line-height: 25px;
+}
+
+/* end of content - beginning of footer/colophon */
+
+.colophon {
+    /* background: rgb(52,90,127); */
+    padding: 60px 0;
+    background: radial-gradient(circle at top, rgba(30,48,68,1) 0%, rgb(20, 29, 42) 100%);
+    background-position: top;
+    color: var(--whiteish);
+    font-family: var(--fontHeading);
+    font-weight: 200;
+    font-size: 14px;
+    letter-spacing: 2px;
+    line-height: 32px;
+}
+
+.colophon a {
+    color: var(--whiteish);
+}
+
+.colophon h2 {
+    text-transform: uppercase;
+    font-family: var(--fontHeading);
+    font-weight: 400;
+    font-size: 30px;
+}
+
+.colophon ul {
+    list-style-type: none;
+    padding: 0%;
+}
+
+.services img {
+    padding-right: 10px;
+}
+
+.opportunities img {
+    padding-right: 10px;
+}
+
+.opportunities p {
+    margin: 0;
+    padding: 0 20px;
+}
+
+.article p {
+    margin: 5px;
+}
+
+.date {
+    float: left;
+    padding: 3px 15px;
+    margin-right: 10px;
+    border-radius: 10px;
+    color: var(--whiteish);
+    font-family: var(--fontHeading);
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.day {
+    display: block;
+    font-size: 25px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.dateOne, .dateTwo, .dateThree {
+    text-align: center;
+}
+
+.dateOne {
+    background-color: #be8442;
+    
+}
+
+.dateTwo {
+    background-color: #bc6142;
+}
+
+.dateThree {
+    background-color: #bd4258;
+}
+
+/* end of footer/colophon - beginning of copy */
+
+.copy {
+    padding-top: 20px;
+    padding-bottom: 60px;
+    background: #0b1016;
+}
+
+.copy p, a {
+    text-transform: uppercase;
+    font-weight: 200;
+    color: lightgray;
+    font: var(--fontHeading);
+    font-size: 12px;
+}
